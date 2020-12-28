@@ -1,15 +1,22 @@
 import {ResponsiveLine} from '@nivo/line';
 import {useState} from 'react';
 import 'semantic-ui-css/semantic.min.css';
-import {Container, Dropdown, Form, Header} from 'semantic-ui-react';
+import {
+  Checkbox,
+  Container,
+  Dropdown,
+  Form,
+  Header,
+  List,
+} from 'semantic-ui-react';
 import './App.css';
 import DataSets from './data.json';
 
-const locations = Object.values(DataSets[0].dataByCityID).sort((a, b) =>
+const cities = Object.values(DataSets[0].dataByCityID).sort((a, b) =>
   a.city.localeCompare(b.city),
 );
 
-const locationOptions = locations.map(loc => ({
+const cityOptions = cities.map(loc => ({
   key: loc.id,
   text: loc.city + ', ' + loc.state,
   value: loc.id,
@@ -37,17 +44,19 @@ const monthNames = [
 ];
 
 export default function App() {
-  const [locations, setLocations] = useState(['13959', '13891', '14839']);
+  const [cityIDs, setCityIDs] = useState(['13959', '13891', '14839']);
   const [dataSetNames, setDataSetNames] = useState(
     dataSetOptions.map(o => o.value),
   );
+  const [shouldStartAtZero, setShouldStartAtZero] = useState(true);
+  const [hasPointLabels, setHasPointLabels] = useState(false);
 
   const selectedDataSets = DataSets.filter(ds =>
     dataSetNames.includes(ds.name),
   );
   const charts = selectedDataSets.map(ds => ({
     name: ds.name,
-    data: locations
+    data: cityIDs
       .filter(loc => ds.dataByCityID[loc])
       .map(loc => ({
         id: ds.dataByCityID[loc].city,
@@ -59,46 +68,64 @@ export default function App() {
   }));
 
   return (
-    <Container className="App" text={true}>
+    <Container className="App" text>
       <Header as="h1">Compare Climates of U.S. Cities</Header>
       <Form>
         <Form.Field>
-          <label>Locations</label>
+          <label>Cities</label>
           <Dropdown
-            fluid={true}
-            multiple={true}
-            onChange={(e, {value}) => setLocations(value)}
-            options={locationOptions}
+            fluid
+            multiple
+            onChange={(e, {value}) => setCityIDs(value)}
+            options={cityOptions}
             placeholder="Select Locations"
-            search={true}
-            selection={true}
-            value={locations}
+            search
+            selection
+            value={cityIDs}
           />
         </Form.Field>
         <Form.Field>
           <label>Data</label>
           <Dropdown
-            fluid={true}
-            multiple={true}
+            fluid
+            multiple
             onChange={(e, {value}) => setDataSetNames(value)}
             options={dataSetOptions}
             placeholder="Select Data Sets"
-            search={true}
-            selection={true}
+            search
+            selection
             value={dataSetNames}
           />
+        </Form.Field>
+        <Form.Field>
+          <List horizontal>
+            <List.Item>
+              <Checkbox
+                checked={shouldStartAtZero}
+                label="Start at zero"
+                onChange={(e, {checked}) => setShouldStartAtZero(checked)}
+              />
+            </List.Item>
+            <List.Item>
+              <Checkbox
+                checked={hasPointLabels}
+                label="Point labels"
+                onChange={(e, {checked}) => setHasPointLabels(checked)}
+              />
+            </List.Item>
+          </List>
         </Form.Field>
         {charts.map(chart => (
           <Form.Field key={chart.name}>
             <label>{chart.name}</label>
-            <div style={{height: 400}}>
+            <div style={{height: 300}}>
               <ResponsiveLine
                 data={chart.data}
                 margin={{top: 20, right: 20, bottom: 50, left: 30}}
                 xScale={{type: 'point'}}
                 yScale={{
                   type: 'linear',
-                  // min: 'auto',
+                  min: shouldStartAtZero ? 0 : 'auto',
                   max: 'auto',
                   stacked: false,
                   reverse: false,
@@ -108,8 +135,8 @@ export default function App() {
                 pointSize={5}
                 pointBorderWidth={2}
                 pointLabelYOffset={-12}
-                useMesh={true}
-                // enablePointLabel={true}
+                useMesh
+                enablePointLabel={hasPointLabels}
                 enableSlices="x"
                 legends={[
                   {
