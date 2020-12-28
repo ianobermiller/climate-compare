@@ -128,7 +128,7 @@ export default function App() {
             </List>
           </Form.Field>
           {charts.map(chart => (
-            <Form.Field key={chart.name}>
+            <Form.Field key={chart.name + shouldStartAtZero + hasPointLabels}>
               <label>{chart.name}</label>
               <div style={{height: 300}}>
                 <ResponsiveLine
