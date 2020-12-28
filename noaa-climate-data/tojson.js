@@ -92,10 +92,14 @@ function normals(input, name, hasCommas) {
       state: state.trim(),
       valueByMonth: [],
     };
+    // The min version has larger value rows
+    const valueSize = hasCommas ? 6 : 7;
     const years = eat(4);
     for (let i = 0; i < 12; i++) {
       // Remove comma and space
-      dataSet.dataByCityID[id].valueByMonth.push(eat(6).slice(0, -1).trim());
+      dataSet.dataByCityID[id].valueByMonth.push(
+        eat(valueSize).slice(0, -1).trim(),
+      );
     }
 
     dataSet.dataByCityID[id].annualValue = eat(6).trim();
@@ -105,12 +109,16 @@ function normals(input, name, hasCommas) {
 }
 
 fs.writeFileSync(
-  'data.json',
-  JSON.stringify([
-    ...relativeHumdity(),
-    normals('nrmavg.txt', 'Temperature (Average)', true),
-    normals('nrmmin.txt', 'Temperature (Min)', false),
-    normals('nrmmax.txt', 'Temperature (Max)', true),
-  ]),
+  '../src/data.json',
+  JSON.stringify(
+    [
+      ...relativeHumdity(),
+      normals('nrmavg.txt', 'Temperature (Average)', true),
+      normals('nrmmin.txt', 'Temperature (Min)', false),
+      normals('nrmmax.txt', 'Temperature (Max)', true),
+    ],
+    null,
+    2,
+  ),
   'utf8',
 );
