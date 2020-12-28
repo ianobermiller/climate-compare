@@ -183,12 +183,13 @@ export default function App() {
         </Form>
       </Segment>
       <Segment basic>
+        Made with 🚀 by <a href="https://ianobermiller.com">Ian Obermiller</a>.
         Data from the{' '}
         <a href="https://www.ncdc.noaa.gov/ghcn/comparative-climatic-data">
           NOAA
         </a>
-        . Made with 🚀 by <a href="https://ianobermiller.com">Ian Obermiller</a>
-        .
+        . Charts by <a href="https://nivo.rocks/">Nivo</a>. UI by{' '}
+        <a href="https://react.semantic-ui.com/">React Semantic UI</a>.
       </Segment>
     </Container>
   );
