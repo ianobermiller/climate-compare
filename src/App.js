@@ -1,5 +1,40 @@
 import {ResponsiveLine} from '@nivo/line';
+import 'semantic-ui-css/semantic.min.css';
+import {Dropdown} from 'semantic-ui-react';
 import './App.css';
+
+const friendOptions = [
+  {
+    key: 'Jenny Hess',
+    text: 'Jenny Hess',
+    value: 'Jenny Hess',
+  },
+  {
+    key: 'Elliot Fu',
+    text: 'Elliot Fu',
+    value: 'Elliot Fu',
+  },
+  {
+    key: 'Stevie Feliciano',
+    text: 'Stevie Feliciano',
+    value: 'Stevie Feliciano',
+  },
+  {
+    key: 'Christian',
+    text: 'Christian',
+    value: 'Christian',
+  },
+  {
+    key: 'Matt',
+    text: 'Matt',
+    value: 'Matt',
+  },
+  {
+    key: 'Justen Kitsune',
+    text: 'Justen Kitsune',
+    value: 'Justen Kitsune',
+  },
+];
 
 const data = [
   {
@@ -277,6 +312,12 @@ const data = [
 export default function App() {
   return (
     <div className="App">
+      <Dropdown
+        placeholder="Select Friend"
+        fluid
+        selection
+        options={friendOptions}
+      />
       <div style={{height: 400}}>
         <ResponsiveLine
           data={data}
