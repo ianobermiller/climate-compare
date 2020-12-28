@@ -9,7 +9,6 @@ import {
   List,
   Segment,
 } from 'semantic-ui-react';
-import './App.css';
 import DataSets from './data.json';
 import useLocalStorage from './useLocalStorage';
 
