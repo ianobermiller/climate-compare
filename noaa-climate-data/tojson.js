@@ -8,7 +8,7 @@ function chomper(line) {
     const chunk = line.slice(current, current + count);
     current += count;
     return chunk;
-  }
+  };
 }
 
 function relativeHumdity() {
@@ -59,12 +59,10 @@ function relativeHumdity() {
   }
 
   return [dataSetMorning, dataSetAfternoon];
-
 }
 
-
-function normals(input, output, name) {
-  const contents = fs.readFileSync(input, 'utf8');
+function normals(input, name, hasCommas) {
+  const contents = fs.readFileSync(input, 'utf8').trim();
   const lines = contents.split('\n');
   const dataSet = {
     name,
@@ -72,15 +70,22 @@ function normals(input, output, name) {
   };
 
   // Skip the first header line
-  for (const line of lines.slice(1, 2)) {
+  for (const line of lines.slice(1)) {
     if (!line.trim().length) {
       continue;
     }
 
     const eat = chomper(line);
     const id = eat(5);
-    eat(1); // Comma
-    const [city, state] = eat(32).split(',');
+    hasCommas && eat(1); // Comma
+    const name = eat(32).trim();
+    let city, state;
+    if (name.includes(',')) {
+      [city, state] = name.split(',');
+    } else {
+      city = name.slice(0, -2);
+      state = name.slice(-2);
+    }
     dataSet.dataByCityID[id] = {
       id,
       city,
@@ -99,9 +104,13 @@ function normals(input, output, name) {
   return dataSet;
 }
 
-fs.writeFileSync('data.json', JSON.stringify([
-  ...relativeHumdity(),
-  normals('nrmavg.txt', 'Temperature (Average)'),
-  normals('nrmmin.txt', 'Temperature (Min)'),
-  normals('nrmmax.txt', 'Temperature (Max)'),
-]), 'utf8');
+fs.writeFileSync(
+  'data.json',
+  JSON.stringify([
+    ...relativeHumdity(),
+    normals('nrmavg.txt', 'Temperature (Average)', true),
+    normals('nrmmin.txt', 'Temperature (Min)', false),
+    normals('nrmmax.txt', 'Temperature (Max)', true),
+  ]),
+  'utf8',
+);
