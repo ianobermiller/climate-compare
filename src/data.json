@@ -1,5 +1,5310 @@
 [
   {
+    "name": "Mean Number of Days Maximum Temperature 90°F or Higher",
+    "dataByCityID": {
+      "11641": {
+        "id": "11641",
+        "city": "SAN JUAN",
+        "state": "PR",
+        "valueByMonth": [
+          0,
+          1,
+          2,
+          4,
+          6,
+          10,
+          9,
+          11,
+          11,
+          9,
+          2,
+          0
+        ],
+        "annualValue": "65"
+      },
+      "12815": {
+        "id": "12815",
+        "city": "ORLANDO",
+        "state": "FL",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          3,
+          11,
+          18,
+          23,
+          23,
+          16,
+          3,
+          0,
+          0
+        ],
+        "annualValue": "98"
+      },
+      "12816": {
+        "id": "12816",
+        "city": "GAINESVILLE",
+        "state": "FL",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          2,
+          11,
+          18,
+          22,
+          21,
+          11,
+          1,
+          0,
+          0
+        ],
+        "annualValue": "85"
+      },
+      "12834": {
+        "id": "12834",
+        "city": "DAYTONA BEACH",
+        "state": "FL",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          1,
+          6,
+          12,
+          17,
+          15,
+          6,
+          1,
+          0,
+          0
+        ],
+        "annualValue": "59"
+      },
+      "12835": {
+        "id": "12835",
+        "city": "FORT MYERS",
+        "state": "FL",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          3,
+          13,
+          18,
+          21,
+          23,
+          17,
+          4,
+          0,
+          0
+        ],
+        "annualValue": "99"
+      },
+      "12836": {
+        "id": "12836",
+        "city": "KEY WEST",
+        "state": "FL",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          7,
+          16,
+          17,
+          8,
+          1,
+          0,
+          0
+        ],
+        "annualValue": "50"
+      },
+      "12839": {
+        "id": "12839",
+        "city": "MIAMI",
+        "state": "FL",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          1,
+          4,
+          11,
+          18,
+          19,
+          11,
+          2,
+          0,
+          0
+        ],
+        "annualValue": "68"
+      },
+      "12842": {
+        "id": "12842",
+        "city": "TAMPA",
+        "state": "FL",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          1,
+          9,
+          17,
+          20,
+          22,
+          16,
+          3,
+          0,
+          0
+        ],
+        "annualValue": "87"
+      },
+      "12843": {
+        "id": "12843",
+        "city": "VERO BEACH",
+        "state": "FL",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          1,
+          4,
+          10,
+          17,
+          18,
+          8,
+          2,
+          0,
+          0
+        ],
+        "annualValue": "61"
+      },
+      "12844": {
+        "id": "12844",
+        "city": "WEST PALM BEACH",
+        "state": "FL",
+        "valueByMonth": [
+          0,
+          0,
+          1,
+          2,
+          4,
+          12,
+          20,
+          22,
+          12,
+          2,
+          0,
+          0
+        ],
+        "annualValue": "75"
+      },
+      "12912": {
+        "id": "12912",
+        "city": "VICTORIA",
+        "state": "TX",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          1,
+          8,
+          22,
+          28,
+          28,
+          18,
+          5,
+          0,
+          0
+        ],
+        "annualValue": "111"
+      },
+      "12916": {
+        "id": "12916",
+        "city": "NEW ORLEANS",
+        "state": "LA",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          4,
+          17,
+          21,
+          21,
+          10,
+          1,
+          0,
+          0
+        ],
+        "annualValue": "75"
+      },
+      "12917": {
+        "id": "12917",
+        "city": "PORT ARTHUR",
+        "state": "TX",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          3,
+          19,
+          25,
+          24,
+          14,
+          2,
+          0,
+          0
+        ],
+        "annualValue": "87"
+      },
+      "12919": {
+        "id": "12919",
+        "city": "BROWNSVILLE",
+        "state": "TX",
+        "valueByMonth": [
+          0,
+          0,
+          1,
+          4,
+          11,
+          24,
+          28,
+          29,
+          20,
+          7,
+          1,
+          0
+        ],
+        "annualValue": "125"
+      },
+      "12921": {
+        "id": "12921",
+        "city": "SAN ANTONIO",
+        "state": "TX",
+        "valueByMonth": [
+          0,
+          0,
+          1,
+          3,
+          10,
+          23,
+          28,
+          28,
+          18,
+          5,
+          0,
+          0
+        ],
+        "annualValue": "116"
+      },
+      "12923": {
+        "id": "12923",
+        "city": "GALVESTON",
+        "state": "TX",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          7,
+          18,
+          20,
+          7,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "53"
+      },
+      "12924": {
+        "id": "12924",
+        "city": "CORPUS CHRISTI",
+        "state": "TX",
+        "valueByMonth": [
+          0,
+          0,
+          1,
+          2,
+          7,
+          22,
+          28,
+          28,
+          18,
+          6,
+          1,
+          0
+        ],
+        "annualValue": "112"
+      },
+      "12960": {
+        "id": "12960",
+        "city": "HOUSTON",
+        "state": "TX",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          1,
+          8,
+          21,
+          27,
+          26,
+          17,
+          4,
+          0,
+          0
+        ],
+        "annualValue": "104"
+      },
+      "13722": {
+        "id": "13722",
+        "city": "RALEIGH",
+        "state": "NC",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          1,
+          2,
+          10,
+          15,
+          12,
+          4,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "44"
+      },
+      "13723": {
+        "id": "13723",
+        "city": "GREENSBORO-WNSTN-SALM-HGHPT",
+        "state": "NC",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          8,
+          12,
+          9,
+          3,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "34"
+      },
+      "13729": {
+        "id": "13729",
+        "city": "ELKINS",
+        "state": "WV",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "3"
+      },
+      "13733": {
+        "id": "13733",
+        "city": "LYNCHBURG",
+        "state": "VA",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          5,
+          9,
+          7,
+          2,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "25"
+      },
+      "13737": {
+        "id": "13737",
+        "city": "NORFOLK",
+        "state": "VA",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          7,
+          12,
+          9,
+          3,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "33"
+      },
+      "13739": {
+        "id": "13739",
+        "city": "PHILADELPHIA",
+        "state": "PA",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          5,
+          10,
+          7,
+          2,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "25"
+      },
+      "13740": {
+        "id": "13740",
+        "city": "RICHMOND",
+        "state": "VA",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          1,
+          3,
+          9,
+          15,
+          11,
+          4,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "43"
+      },
+      "13741": {
+        "id": "13741",
+        "city": "ROANOKE",
+        "state": "VA",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          6,
+          11,
+          9,
+          3,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "30"
+      },
+      "13743": {
+        "id": "13743",
+        "city": "WASHINGTON NAT'L",
+        "state": "DC",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          7,
+          13,
+          10,
+          3,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "36"
+      },
+      "13748": {
+        "id": "13748",
+        "city": "WILMINGTON",
+        "state": "NC",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          1,
+          2,
+          9,
+          16,
+          12,
+          4,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "45"
+      },
+      "13781": {
+        "id": "13781",
+        "city": "WILMINGTON",
+        "state": "DE",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          4,
+          8,
+          5,
+          2,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "20"
+      },
+      "13782": {
+        "id": "13782",
+        "city": "CHARLESTON",
+        "state": "SC",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          6,
+          10,
+          9,
+          3,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "30"
+      },
+      "13865": {
+        "id": "13865",
+        "city": "MERIDIAN",
+        "state": "MS",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          6,
+          18,
+          24,
+          23,
+          12,
+          1,
+          0,
+          0
+        ],
+        "annualValue": "85"
+      },
+      "13866": {
+        "id": "13866",
+        "city": "CHARLESTON",
+        "state": "WV",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          5,
+          8,
+          6,
+          3,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "22"
+      },
+      "13873": {
+        "id": "13873",
+        "city": "ATHENS",
+        "state": "GA",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          3,
+          12,
+          18,
+          15,
+          6,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "55"
+      },
+      "13874": {
+        "id": "13874",
+        "city": "ATLANTA",
+        "state": "GA",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          11,
+          14,
+          12,
+          4,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "44"
+      },
+      "13877": {
+        "id": "13877",
+        "city": "BRISTOL-JHNSN CTY-KNGSPRT",
+        "state": "TN",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          7,
+          6,
+          2,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "19"
+      },
+      "13881": {
+        "id": "13881",
+        "city": "CHARLOTTE",
+        "state": "NC",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          10,
+          15,
+          13,
+          5,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "46"
+      },
+      "13882": {
+        "id": "13882",
+        "city": "CHATTANOOGA",
+        "state": "TN",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          11,
+          17,
+          16,
+          6,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "52"
+      },
+      "13883": {
+        "id": "13883",
+        "city": "COLUMBIA",
+        "state": "SC",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          2,
+          7,
+          17,
+          23,
+          20,
+          9,
+          1,
+          0,
+          0
+        ],
+        "annualValue": "79"
+      },
+      "13889": {
+        "id": "13889",
+        "city": "JACKSONVILLE",
+        "state": "FL",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          2,
+          8,
+          17,
+          24,
+          21,
+          10,
+          1,
+          0,
+          0
+        ],
+        "annualValue": "82"
+      },
+      "13891": {
+        "id": "13891",
+        "city": "KNOXVILLE",
+        "state": "TN",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          8,
+          12,
+          10,
+          4,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "36"
+      },
+      "13893": {
+        "id": "13893",
+        "city": "MEMPHIS",
+        "state": "TN",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          3,
+          15,
+          22,
+          19,
+          9,
+          1,
+          0,
+          0
+        ],
+        "annualValue": "68"
+      },
+      "13894": {
+        "id": "13894",
+        "city": "MOBILE",
+        "state": "AL",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          5,
+          16,
+          22,
+          21,
+          11,
+          1,
+          0,
+          0
+        ],
+        "annualValue": "76"
+      },
+      "13895": {
+        "id": "13895",
+        "city": "MONTGOMERY",
+        "state": "AL",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          6,
+          18,
+          24,
+          23,
+          13,
+          2,
+          0,
+          0
+        ],
+        "annualValue": "85"
+      },
+      "13897": {
+        "id": "13897",
+        "city": "NASHVILLE",
+        "state": "TN",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          11,
+          18,
+          15,
+          6,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "52"
+      },
+      "13899": {
+        "id": "13899",
+        "city": "PENSACOLA",
+        "state": "FL",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          3,
+          14,
+          19,
+          18,
+          9,
+          1,
+          0,
+          0
+        ],
+        "annualValue": "63"
+      },
+      "13957": {
+        "id": "13957",
+        "city": "SHREVEPORT",
+        "state": "LA",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          5,
+          19,
+          26,
+          25,
+          15,
+          2,
+          0,
+          0
+        ],
+        "annualValue": "93"
+      },
+      "13958": {
+        "id": "13958",
+        "city": "AUSTIN",
+        "state": "TX",
+        "valueByMonth": [
+          0,
+          0,
+          1,
+          2,
+          9,
+          22,
+          28,
+          28,
+          18,
+          5,
+          0,
+          0
+        ],
+        "annualValue": "114"
+      },
+      "13959": {
+        "id": "13959",
+        "city": "WACO",
+        "state": "TX",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          1,
+          8,
+          23,
+          29,
+          28,
+          18,
+          4,
+          0,
+          0
+        ],
+        "annualValue": "111"
+      },
+      "13960": {
+        "id": "13960",
+        "city": "DALLAS",
+        "state": "TX",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          1,
+          7,
+          21,
+          28,
+          27,
+          16,
+          3,
+          0,
+          0
+        ],
+        "annualValue": "103"
+      },
+      "13962": {
+        "id": "13962",
+        "city": "ABILENE",
+        "state": "TX",
+        "valueByMonth": [
+          0,
+          0,
+          1,
+          3,
+          9,
+          20,
+          27,
+          25,
+          13,
+          3,
+          0,
+          0
+        ],
+        "annualValue": "101"
+      },
+      "13963": {
+        "id": "13963",
+        "city": "LITTLE ROCK",
+        "state": "AR",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          4,
+          16,
+          23,
+          21,
+          10,
+          1,
+          0,
+          0
+        ],
+        "annualValue": "75"
+      },
+      "13964": {
+        "id": "13964",
+        "city": "FORT SMITH",
+        "state": "AR",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          3,
+          15,
+          24,
+          23,
+          11,
+          2,
+          0,
+          0
+        ],
+        "annualValue": "78"
+      },
+      "13966": {
+        "id": "13966",
+        "city": "WICHITA FALLS",
+        "state": "TX",
+        "valueByMonth": [
+          0,
+          0,
+          1,
+          2,
+          9,
+          21,
+          28,
+          27,
+          16,
+          4,
+          0,
+          0
+        ],
+        "annualValue": "107"
+      },
+      "13967": {
+        "id": "13967",
+        "city": "OKLAHOMA CITY",
+        "state": "OK",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          1,
+          3,
+          13,
+          23,
+          22,
+          9,
+          1,
+          0,
+          0
+        ],
+        "annualValue": "71"
+      },
+      "13968": {
+        "id": "13968",
+        "city": "TULSA",
+        "state": "OK",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          1,
+          3,
+          14,
+          23,
+          22,
+          10,
+          1,
+          0,
+          0
+        ],
+        "annualValue": "73"
+      },
+      "13970": {
+        "id": "13970",
+        "city": "BATON ROUGE",
+        "state": "LA",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          6,
+          20,
+          24,
+          23,
+          14,
+          2,
+          0,
+          0
+        ],
+        "annualValue": "89"
+      },
+      "13984": {
+        "id": "13984",
+        "city": "CONCORDIA",
+        "state": "KS",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          9,
+          17,
+          14,
+          6,
+          1,
+          0,
+          0
+        ],
+        "annualValue": "50"
+      },
+      "13985": {
+        "id": "13985",
+        "city": "DODGE CITY",
+        "state": "KS",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          1,
+          4,
+          14,
+          21,
+          19,
+          8,
+          1,
+          0,
+          0
+        ],
+        "annualValue": "67"
+      },
+      "13994": {
+        "id": "13994",
+        "city": "ST. LOUIS",
+        "state": "MO",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          9,
+          15,
+          13,
+          5,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "45"
+      },
+      "13995": {
+        "id": "13995",
+        "city": "SPRINGFIELD",
+        "state": "MO",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          6,
+          15,
+          14,
+          4,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "41"
+      },
+      "13996": {
+        "id": "13996",
+        "city": "TOPEKA",
+        "state": "KS",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          8,
+          16,
+          14,
+          5,
+          1,
+          0,
+          0
+        ],
+        "annualValue": "47"
+      },
+      "14607": {
+        "id": "14607",
+        "city": "CARIBOU",
+        "state": "ME",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "2"
+      },
+      "14711": {
+        "id": "14711",
+        "city": "MIDDLETOWN/HARRISBURG",
+        "state": "PA",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          5,
+          9,
+          5,
+          2,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "22"
+      },
+      "14732": {
+        "id": "14732",
+        "city": "NEW YORK Laguardia AP",
+        "state": "NY",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          4,
+          7,
+          5,
+          1,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "17"
+      },
+      "14733": {
+        "id": "14733",
+        "city": "BUFFALO",
+        "state": "NY",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "4"
+      },
+      "14734": {
+        "id": "14734",
+        "city": "NEWARK",
+        "state": "NJ",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          5,
+          9,
+          6,
+          2,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "23"
+      },
+      "14735": {
+        "id": "14735",
+        "city": "ALBANY",
+        "state": "NY",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          5,
+          3,
+          1,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "11"
+      },
+      "14737": {
+        "id": "14737",
+        "city": "ALLENTOWN",
+        "state": "PA",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          3,
+          7,
+          4,
+          1,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "16"
+      },
+      "14739": {
+        "id": "14739",
+        "city": "BOSTON",
+        "state": "MA",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          3,
+          5,
+          3,
+          1,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "13"
+      },
+      "14740": {
+        "id": "14740",
+        "city": "HARTFORD",
+        "state": "CT",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          4,
+          7,
+          5,
+          1,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "18"
+      },
+      "14742": {
+        "id": "14742",
+        "city": "BURLINGTON",
+        "state": "VT",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          3,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "7"
+      },
+      "14745": {
+        "id": "14745",
+        "city": "CONCORD",
+        "state": "NH",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          3,
+          5,
+          3,
+          1,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "12"
+      },
+      "14753": {
+        "id": "14753",
+        "city": "BLUE HILL",
+        "state": "MA",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          3,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "7"
+      },
+      "14755": {
+        "id": "14755",
+        "city": "MT. WASHINGTON",
+        "state": "NH",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "0"
+      },
+      "14764": {
+        "id": "14764",
+        "city": "PORTLAND",
+        "state": "ME",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "5"
+      },
+      "14765": {
+        "id": "14765",
+        "city": "PROVIDENCE",
+        "state": "RI",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          2,
+          4,
+          3,
+          1,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "10"
+      },
+      "14768": {
+        "id": "14768",
+        "city": "ROCHESTER",
+        "state": "NY",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          4,
+          2,
+          1,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "10"
+      },
+      "14771": {
+        "id": "14771",
+        "city": "SYRACUSE",
+        "state": "NY",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          4,
+          2,
+          1,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "10"
+      },
+      "14777": {
+        "id": "14777",
+        "city": "AVOCA",
+        "state": "PA",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          4,
+          2,
+          1,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "10"
+      },
+      "14778": {
+        "id": "14778",
+        "city": "WILLIAMSPORT",
+        "state": "PA",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          3,
+          6,
+          3,
+          1,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "15"
+      },
+      "14820": {
+        "id": "14820",
+        "city": "CLEVELAND",
+        "state": "OH",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          5,
+          3,
+          1,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "13"
+      },
+      "14821": {
+        "id": "14821",
+        "city": "COLUMBUS",
+        "state": "OH",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          4,
+          7,
+          5,
+          2,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "19"
+      },
+      "14826": {
+        "id": "14826",
+        "city": "FLINT",
+        "state": "MI",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          4,
+          2,
+          1,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "9"
+      },
+      "14827": {
+        "id": "14827",
+        "city": "FORT WAYNE",
+        "state": "IN",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          4,
+          6,
+          4,
+          2,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "16"
+      },
+      "14836": {
+        "id": "14836",
+        "city": "LANSING",
+        "state": "MI",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          4,
+          2,
+          1,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "10"
+      },
+      "14837": {
+        "id": "14837",
+        "city": "MADISON",
+        "state": "WI",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          5,
+          3,
+          1,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "12"
+      },
+      "14839": {
+        "id": "14839",
+        "city": "MILWAUKEE",
+        "state": "WI",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          4,
+          3,
+          1,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "10"
+      },
+      "14840": {
+        "id": "14840",
+        "city": "MUSKEGON",
+        "state": "MI",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "3"
+      },
+      "14842": {
+        "id": "14842",
+        "city": "PEORIA",
+        "state": "IL",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          5,
+          8,
+          6,
+          2,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "23"
+      },
+      "14847": {
+        "id": "14847",
+        "city": "SAULT STE. MARIE",
+        "state": "MI",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "2"
+      },
+      "14848": {
+        "id": "14848",
+        "city": "SOUTH BEND",
+        "state": "IN",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          4,
+          7,
+          4,
+          2,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "17"
+      },
+      "14852": {
+        "id": "14852",
+        "city": "YOUNGSTOWN",
+        "state": "OH",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          4,
+          2,
+          1,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "9"
+      },
+      "14860": {
+        "id": "14860",
+        "city": "ERIE",
+        "state": "PA",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "4"
+      },
+      "14891": {
+        "id": "14891",
+        "city": "MANSFIELD",
+        "state": "OH",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          3,
+          2,
+          1,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "7"
+      },
+      "14895": {
+        "id": "14895",
+        "city": "AKRON",
+        "state": "OH",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          4,
+          2,
+          1,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "9"
+      },
+      "14898": {
+        "id": "14898",
+        "city": "GREEN BAY",
+        "state": "WI",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          3,
+          2,
+          1,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "8"
+      },
+      "14913": {
+        "id": "14913",
+        "city": "DULUTH",
+        "state": "MN",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "2"
+      },
+      "14914": {
+        "id": "14914",
+        "city": "FARGO",
+        "state": "ND",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          2,
+          5,
+          4,
+          1,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "13"
+      },
+      "14916": {
+        "id": "14916",
+        "city": "GRAND FORKS",
+        "state": "ND",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          2,
+          4,
+          4,
+          1,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "12"
+      },
+      "14918": {
+        "id": "14918",
+        "city": "INTERNATIONAL FALLS",
+        "state": "MN",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "4"
+      },
+      "14920": {
+        "id": "14920",
+        "city": "LA CROSSE",
+        "state": "WI",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          3,
+          6,
+          4,
+          1,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "16"
+      },
+      "14922": {
+        "id": "14922",
+        "city": "MINNEAPOLIS-ST.PAUL",
+        "state": "MN",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          3,
+          6,
+          4,
+          1,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "15"
+      },
+      "14923": {
+        "id": "14923",
+        "city": "MOLINE",
+        "state": "IL",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          5,
+          8,
+          6,
+          2,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "23"
+      },
+      "14925": {
+        "id": "14925",
+        "city": "ROCHESTER",
+        "state": "MN",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          3,
+          4,
+          3,
+          1,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "11"
+      },
+      "14926": {
+        "id": "14926",
+        "city": "SAINT CLOUD",
+        "state": "MN",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          2,
+          4,
+          3,
+          1,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "10"
+      },
+      "14929": {
+        "id": "14929",
+        "city": "ABERDEEN",
+        "state": "SD",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          4,
+          10,
+          8,
+          3,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "26"
+      },
+      "14933": {
+        "id": "14933",
+        "city": "DES MOINES",
+        "state": "IA",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          5,
+          9,
+          7,
+          2,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "24"
+      },
+      "14935": {
+        "id": "14935",
+        "city": "GRAND ISLAND",
+        "state": "NE",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          8,
+          14,
+          11,
+          5,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "40"
+      },
+      "14936": {
+        "id": "14936",
+        "city": "HURON",
+        "state": "SD",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          4,
+          10,
+          8,
+          3,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "27"
+      },
+      "14939": {
+        "id": "14939",
+        "city": "LINCOLN",
+        "state": "NE",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          9,
+          15,
+          11,
+          5,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "42"
+      },
+      "14941": {
+        "id": "14941",
+        "city": "NORFOLK",
+        "state": "NE",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          6,
+          11,
+          8,
+          3,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "32"
+      },
+      "14942": {
+        "id": "14942",
+        "city": "OMAHA",
+        "state": "NE",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          7,
+          13,
+          9,
+          3,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "34"
+      },
+      "14943": {
+        "id": "14943",
+        "city": "SIOUX CITY",
+        "state": "IA",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          6,
+          10,
+          7,
+          2,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "27"
+      },
+      "14944": {
+        "id": "14944",
+        "city": "SIOUX FALLS",
+        "state": "SD",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          4,
+          9,
+          6,
+          2,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "23"
+      },
+      "21504": {
+        "id": "21504",
+        "city": "HILO",
+        "state": "HI",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "1"
+      },
+      "22010": {
+        "id": "22010",
+        "city": "DEL RIO",
+        "state": "TX",
+        "valueByMonth": [
+          0,
+          0,
+          2,
+          7,
+          16,
+          26,
+          28,
+          29,
+          20,
+          5,
+          0,
+          0
+        ],
+        "annualValue": "134"
+      },
+      "22516": {
+        "id": "22516",
+        "city": "KAHULUI",
+        "state": "HI",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          2,
+          4,
+          6,
+          7,
+          4,
+          1,
+          0
+        ],
+        "annualValue": "24"
+      },
+      "22521": {
+        "id": "22521",
+        "city": "HONOLULU",
+        "state": "HI",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          4,
+          8,
+          7,
+          3,
+          0,
+          0
+        ],
+        "annualValue": "24"
+      },
+      "22536": {
+        "id": "22536",
+        "city": "LIHUE",
+        "state": "HI",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "0"
+      },
+      "23009": {
+        "id": "23009",
+        "city": "ROSWELL",
+        "state": "NM",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          2,
+          11,
+          23,
+          25,
+          23,
+          11,
+          2,
+          0,
+          0
+        ],
+        "annualValue": "99"
+      },
+      "23023": {
+        "id": "23023",
+        "city": "MIDLAND-ODESSA",
+        "state": "TX",
+        "valueByMonth": [
+          0,
+          0,
+          1,
+          4,
+          13,
+          22,
+          26,
+          25,
+          13,
+          3,
+          0,
+          0
+        ],
+        "annualValue": "106"
+      },
+      "23034": {
+        "id": "23034",
+        "city": "SAN ANGELO",
+        "state": "TX",
+        "valueByMonth": [
+          0,
+          0,
+          1,
+          5,
+          13,
+          23,
+          27,
+          26,
+          15,
+          3,
+          0,
+          0
+        ],
+        "annualValue": "114"
+      },
+      "23042": {
+        "id": "23042",
+        "city": "LUBBOCK",
+        "state": "TX",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          2,
+          9,
+          19,
+          23,
+          20,
+          9,
+          1,
+          0,
+          0
+        ],
+        "annualValue": "84"
+      },
+      "23044": {
+        "id": "23044",
+        "city": "EL PASO",
+        "state": "TX",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          2,
+          13,
+          26,
+          27,
+          24,
+          13,
+          2,
+          0,
+          0
+        ],
+        "annualValue": "107"
+      },
+      "23047": {
+        "id": "23047",
+        "city": "AMARILLO",
+        "state": "TX",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          1,
+          5,
+          15,
+          21,
+          18,
+          7,
+          1,
+          0,
+          0
+        ],
+        "annualValue": "68"
+      },
+      "23050": {
+        "id": "23050",
+        "city": "ALBUQUERQUE",
+        "state": "NM",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          18,
+          23,
+          16,
+          4,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "64"
+      },
+      "23051": {
+        "id": "23051",
+        "city": "CLAYTON",
+        "state": "NM",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          10,
+          15,
+          11,
+          3,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "41"
+      },
+      "23061": {
+        "id": "23061",
+        "city": "ALAMOSA",
+        "state": "CO",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "2"
+      },
+      "23062": {
+        "id": "23062",
+        "city": "DENVER",
+        "state": "CO",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          7,
+          15,
+          10,
+          3,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "36"
+      },
+      "23065": {
+        "id": "23065",
+        "city": "GOODLAND",
+        "state": "KS",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          10,
+          19,
+          16,
+          7,
+          1,
+          0,
+          0
+        ],
+        "annualValue": "54"
+      },
+      "23066": {
+        "id": "23066",
+        "city": "GRAND JUNCTION",
+        "state": "CO",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          14,
+          24,
+          18,
+          3,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "60"
+      },
+      "23129": {
+        "id": "23129",
+        "city": "LONG BEACH",
+        "state": "CA",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          3,
+          5,
+          5,
+          3,
+          1,
+          0
+        ],
+        "annualValue": "21"
+      },
+      "23154": {
+        "id": "23154",
+        "city": "ELY",
+        "state": "NV",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          12,
+          6,
+          0,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "22"
+      },
+      "23155": {
+        "id": "23155",
+        "city": "BAKERSFIELD",
+        "state": "CA",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          2,
+          9,
+          19,
+          29,
+          27,
+          18,
+          5,
+          0,
+          0
+        ],
+        "annualValue": "110"
+      },
+      "23157": {
+        "id": "23157",
+        "city": "BISHOP",
+        "state": "CA",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          5,
+          17,
+          28,
+          26,
+          14,
+          1,
+          0,
+          0
+        ],
+        "annualValue": "91"
+      },
+      "23160": {
+        "id": "23160",
+        "city": "TUCSON",
+        "state": "AZ",
+        "valueByMonth": [
+          0,
+          0,
+          1,
+          6,
+          19,
+          29,
+          29,
+          29,
+          24,
+          10,
+          0,
+          0
+        ],
+        "annualValue": "147"
+      },
+      "23169": {
+        "id": "23169",
+        "city": "LAS VEGAS",
+        "state": "NV",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          3,
+          16,
+          26,
+          31,
+          30,
+          23,
+          6,
+          0,
+          0
+        ],
+        "annualValue": "135"
+      },
+      "23183": {
+        "id": "23183",
+        "city": "PHOENIX",
+        "state": "AZ",
+        "valueByMonth": [
+          0,
+          0,
+          2,
+          10,
+          23,
+          29,
+          31,
+          31,
+          28,
+          16,
+          1,
+          0
+        ],
+        "annualValue": "169"
+      },
+      "23185": {
+        "id": "23185",
+        "city": "RENO",
+        "state": "NV",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          8,
+          22,
+          18,
+          6,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "55"
+      },
+      "23188": {
+        "id": "23188",
+        "city": "SAN DIEGO",
+        "state": "CA",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "annualValue": "3"
+      },
+      "23190": {
+        "id": "23190",
+        "city": "SANTA BARBARA",
+        "state": "CA",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "annualValue": "3"
+      },
+      "23194": {
+        "id": "23194",
+        "city": "WINSLOW",
+        "state": "AZ",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          3,
+          19,
+          25,
+          19,
+          7,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "74"
+      },
+      "23225": {
+        "id": "23225",
+        "city": "BLUE CANYON",
+        "state": "CA",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "1"
+      },
+      "23232": {
+        "id": "23232",
+        "city": "SACRAMENTO",
+        "state": "CA",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          1,
+          5,
+          12,
+          21,
+          19,
+          13,
+          3,
+          0,
+          0
+        ],
+        "annualValue": "74"
+      },
+      "23237": {
+        "id": "23237",
+        "city": "STOCKTON",
+        "state": "CA",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          1,
+          6,
+          14,
+          24,
+          21,
+          14,
+          3,
+          0,
+          0
+        ],
+        "annualValue": "83"
+      },
+      "23272": {
+        "id": "23272",
+        "city": "SAN FRANCISCO",
+        "state": "CA",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "2"
+      },
+      "23273": {
+        "id": "23273",
+        "city": "SANTA MARIA",
+        "state": "CA",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          2,
+          0,
+          0
+        ],
+        "annualValue": "5"
+      },
+      "24011": {
+        "id": "24011",
+        "city": "BISMARCK",
+        "state": "ND",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          3,
+          8,
+          8,
+          2,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "22"
+      },
+      "24018": {
+        "id": "24018",
+        "city": "CHEYENNE",
+        "state": "WY",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          5,
+          3,
+          0,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "10"
+      },
+      "24021": {
+        "id": "24021",
+        "city": "LANDER",
+        "state": "WY",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          12,
+          8,
+          1,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "24"
+      },
+      "24023": {
+        "id": "24023",
+        "city": "NORTH PLATTE",
+        "state": "NE",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          6,
+          14,
+          11,
+          5,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "37"
+      },
+      "24028": {
+        "id": "24028",
+        "city": "SCOTTSBLUFF",
+        "state": "NE",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          8,
+          17,
+          14,
+          5,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "45"
+      },
+      "24029": {
+        "id": "24029",
+        "city": "SHERIDAN",
+        "state": "WY",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          12,
+          12,
+          3,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "30"
+      },
+      "24032": {
+        "id": "24032",
+        "city": "VALENTINE",
+        "state": "NE",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          6,
+          14,
+          12,
+          5,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "40"
+      },
+      "24033": {
+        "id": "24033",
+        "city": "BILLINGS",
+        "state": "MT",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          13,
+          11,
+          2,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "30"
+      },
+      "24089": {
+        "id": "24089",
+        "city": "CASPER",
+        "state": "WY",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          5,
+          14,
+          11,
+          2,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "32"
+      },
+      "24090": {
+        "id": "24090",
+        "city": "RAPID CITY",
+        "state": "SD",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          4,
+          12,
+          12,
+          4,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "32"
+      },
+      "24121": {
+        "id": "24121",
+        "city": "ELKO",
+        "state": "NV",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          6,
+          21,
+          16,
+          3,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "46"
+      },
+      "24127": {
+        "id": "24127",
+        "city": "SALT LAKE CITY",
+        "state": "UT",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          9,
+          23,
+          20,
+          5,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "58"
+      },
+      "24128": {
+        "id": "24128",
+        "city": "WINNEMUCCA",
+        "state": "NV",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          7,
+          21,
+          18,
+          4,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "51"
+      },
+      "24131": {
+        "id": "24131",
+        "city": "BOISE",
+        "state": "ID",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          6,
+          20,
+          17,
+          4,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "48"
+      },
+      "24143": {
+        "id": "24143",
+        "city": "GREAT FALLS",
+        "state": "MT",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          9,
+          7,
+          1,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "20"
+      },
+      "24144": {
+        "id": "24144",
+        "city": "HELENA",
+        "state": "MT",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          9,
+          8,
+          1,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "20"
+      },
+      "24146": {
+        "id": "24146",
+        "city": "KALISPELL",
+        "state": "MT",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          5,
+          4,
+          0,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "11"
+      },
+      "24149": {
+        "id": "24149",
+        "city": "LEWISTON",
+        "state": "ID",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          5,
+          17,
+          15,
+          4,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "42"
+      },
+      "24153": {
+        "id": "24153",
+        "city": "MISSOULA",
+        "state": "MT",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          11,
+          9,
+          1,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "23"
+      },
+      "24155": {
+        "id": "24155",
+        "city": "PENDLETON",
+        "state": "OR",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          4,
+          15,
+          12,
+          3,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "36"
+      },
+      "24156": {
+        "id": "24156",
+        "city": "POCATELLO",
+        "state": "ID",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          16,
+          13,
+          2,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "35"
+      },
+      "24157": {
+        "id": "24157",
+        "city": "SPOKANE",
+        "state": "WA",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          9,
+          8,
+          1,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "20"
+      },
+      "24160": {
+        "id": "24160",
+        "city": "WALLA WALLA",
+        "state": "WA",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          5,
+          17,
+          14,
+          4,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "41"
+      },
+      "24221": {
+        "id": "24221",
+        "city": "EUGENE",
+        "state": "OR",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          7,
+          6,
+          2,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "16"
+      },
+      "24225": {
+        "id": "24225",
+        "city": "MEDFORD",
+        "state": "OR",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          7,
+          18,
+          17,
+          9,
+          1,
+          0,
+          0
+        ],
+        "annualValue": "54"
+      },
+      "24227": {
+        "id": "24227",
+        "city": "OLYMPIA",
+        "state": "WA",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          3,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "6"
+      },
+      "24229": {
+        "id": "24229",
+        "city": "PORTLAND",
+        "state": "OR",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          4,
+          4,
+          2,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "12"
+      },
+      "24232": {
+        "id": "24232",
+        "city": "SALEM",
+        "state": "OR",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          6,
+          6,
+          2,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "15"
+      },
+      "24233": {
+        "id": "24233",
+        "city": "SEATTLE",
+        "state": "WA",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "3"
+      },
+      "24235": {
+        "id": "24235",
+        "city": "SEXTON SUMMIT",
+        "state": "OR",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "3"
+      },
+      "24243": {
+        "id": "24243",
+        "city": "YAKIMA",
+        "state": "WA",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          5,
+          15,
+          12,
+          3,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "36"
+      },
+      "24257": {
+        "id": "24257",
+        "city": "REDDING",
+        "state": "CA",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          1,
+          7,
+          18,
+          28,
+          27,
+          19,
+          5,
+          0,
+          0
+        ],
+        "annualValue": "105"
+      },
+      "25308": {
+        "id": "25308",
+        "city": "ANNETTE",
+        "state": "AK",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          4,
+          6,
+          7,
+          2,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "20"
+      },
+      "25309": {
+        "id": "25309",
+        "city": "JUNEAU",
+        "state": "AK",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "0"
+      },
+      "25339": {
+        "id": "25339",
+        "city": "YAKUTAT",
+        "state": "AK",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "0"
+      },
+      "25501": {
+        "id": "25501",
+        "city": "KODIAK",
+        "state": "AK",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          3,
+          3,
+          0,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "7"
+      },
+      "25503": {
+        "id": "25503",
+        "city": "KING SALMON",
+        "state": "AK",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "0"
+      },
+      "25507": {
+        "id": "25507",
+        "city": "HOMER",
+        "state": "AK",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "3"
+      },
+      "25624": {
+        "id": "25624",
+        "city": "COLD BAY",
+        "state": "AK",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "0"
+      },
+      "25713": {
+        "id": "25713",
+        "city": "ST. PAUL ISLAND",
+        "state": "AK",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "0"
+      },
+      "26411": {
+        "id": "26411",
+        "city": "FAIRBANKS",
+        "state": "AK",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          4,
+          17,
+          20,
+          10,
+          1,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "53"
+      },
+      "26415": {
+        "id": "26415",
+        "city": "BIG DELTA",
+        "state": "AK",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          3,
+          11,
+          15,
+          8,
+          0,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "38"
+      },
+      "26425": {
+        "id": "26425",
+        "city": "GULKANA",
+        "state": "AK",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          10,
+          13,
+          7,
+          0,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "33"
+      },
+      "26442": {
+        "id": "26442",
+        "city": "VALDEZ",
+        "state": "AK",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          2,
+          3,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "8"
+      },
+      "26451": {
+        "id": "26451",
+        "city": "ANCHORAGE",
+        "state": "AK",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          4,
+          7,
+          3,
+          0,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "15"
+      },
+      "26510": {
+        "id": "26510",
+        "city": "MCGRATH",
+        "state": "AK",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "0"
+      },
+      "26528": {
+        "id": "26528",
+        "city": "TALKEETNA",
+        "state": "AK",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          10,
+          14,
+          8,
+          0,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "35"
+      },
+      "26533": {
+        "id": "26533",
+        "city": "BETTLES",
+        "state": "AK",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          14,
+          16,
+          6,
+          0,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "38"
+      },
+      "26615": {
+        "id": "26615",
+        "city": "BETHEL",
+        "state": "AK",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          5,
+          6,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "14"
+      },
+      "26616": {
+        "id": "26616",
+        "city": "KOTZEBUE",
+        "state": "AK",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          3,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "5"
+      },
+      "26617": {
+        "id": "26617",
+        "city": "NOME",
+        "state": "AK",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "0"
+      },
+      "27502": {
+        "id": "27502",
+        "city": "BARROW",
+        "state": "AK",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "0"
+      },
+      "40308": {
+        "id": "40308",
+        "city": "YAP- W CAROLINE IS.",
+        "state": "PC",
+        "valueByMonth": [
+          1,
+          1,
+          2,
+          5,
+          8,
+          6,
+          4,
+          4,
+          5,
+          6,
+          4,
+          1
+        ],
+        "annualValue": "46"
+      },
+      "40309": {
+        "id": "40309",
+        "city": "KOROR",
+        "state": "PC",
+        "valueByMonth": [
+          5,
+          4,
+          7,
+          11,
+          14,
+          9,
+          5,
+          4,
+          6,
+          10,
+          13,
+          9
+        ],
+        "annualValue": "96"
+      },
+      "40504": {
+        "id": "40504",
+        "city": "POHNPEI- CAROLINE IS.",
+        "state": "PC",
+        "valueByMonth": [
+          1,
+          1,
+          3,
+          4,
+          6,
+          6,
+          9,
+          12,
+          13,
+          14,
+          10,
+          4
+        ],
+        "annualValue": "82"
+      },
+      "40505": {
+        "id": "40505",
+        "city": "CHUUK- E. CAROLINE IS.",
+        "state": "PC",
+        "valueByMonth": [
+          1,
+          1,
+          1,
+          2,
+          3,
+          2,
+          3,
+          3,
+          3,
+          3,
+          2,
+          1
+        ],
+        "annualValue": "25"
+      },
+      "40604": {
+        "id": "40604",
+        "city": "KWAJALEIN- MARSHALL IS.",
+        "state": "PC",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          2,
+          2,
+          2,
+          1,
+          0
+        ],
+        "annualValue": "11"
+      },
+      "40710": {
+        "id": "40710",
+        "city": "MAJURO- MARSHALL IS",
+        "state": "PC",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0
+        ],
+        "annualValue": "3"
+      },
+      "41415": {
+        "id": "41415",
+        "city": "GUAM",
+        "state": "PC",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          2,
+          5,
+          5,
+          3,
+          2,
+          2,
+          1,
+          2,
+          0
+        ],
+        "annualValue": "22"
+      },
+      "61705": {
+        "id": "61705",
+        "city": "PAGO PAGO- AMER SAMOA",
+        "state": "PC",
+        "valueByMonth": [
+          4,
+          5,
+          5,
+          3,
+          1,
+          0,
+          0,
+          0,
+          0,
+          1,
+          2,
+          4
+        ],
+        "annualValue": "26"
+      },
+      "93037": {
+        "id": "93037",
+        "city": "COLORADO SPRINGS",
+        "state": "CO",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          9,
+          4,
+          1,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "19"
+      },
+      "93058": {
+        "id": "93058",
+        "city": "PUEBLO",
+        "state": "CO",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          3,
+          15,
+          23,
+          18,
+          8,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "67"
+      },
+      "93134": {
+        "id": "93134",
+        "city": "LOS ANGELES",
+        "state": "CA",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          1,
+          1,
+          1,
+          3,
+          4,
+          5,
+          3,
+          1,
+          0
+        ],
+        "annualValue": "21"
+      },
+      "93193": {
+        "id": "93193",
+        "city": "FRESNO",
+        "state": "CA",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          2,
+          9,
+          19,
+          29,
+          27,
+          18,
+          4,
+          0,
+          0
+        ],
+        "annualValue": "108"
+      },
+      "93721": {
+        "id": "93721",
+        "city": "BALTIMORE",
+        "state": "MD",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          7,
+          12,
+          8,
+          3,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "31"
+      },
+      "93729": {
+        "id": "93729",
+        "city": "CAPE HATTERAS",
+        "state": "NC",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          2,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "6"
+      },
+      "93730": {
+        "id": "93730",
+        "city": "ATLANTIC CITY",
+        "state": "NJ",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          4,
+          8,
+          5,
+          1,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "19"
+      },
+      "93738": {
+        "id": "93738",
+        "city": "WASHINGTON DULLES",
+        "state": "DC",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          5,
+          11,
+          9,
+          3,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "30"
+      },
+      "93739": {
+        "id": "93739",
+        "city": "WALLOPS ISLAND",
+        "state": "VA",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          3,
+          6,
+          4,
+          1,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "15"
+      },
+      "93805": {
+        "id": "93805",
+        "city": "TALLAHASSEE",
+        "state": "FL",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          1,
+          10,
+          19,
+          23,
+          22,
+          14,
+          2,
+          0,
+          0
+        ],
+        "annualValue": "91"
+      },
+      "93814": {
+        "id": "93814",
+        "city": "CINCINNATI",
+        "state": "OH",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          4,
+          8,
+          7,
+          3,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "23"
+      },
+      "93815": {
+        "id": "93815",
+        "city": "DAYTON",
+        "state": "OH",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          6,
+          4,
+          2,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "16"
+      },
+      "93817": {
+        "id": "93817",
+        "city": "EVANSVILLE",
+        "state": "IN",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          9,
+          14,
+          12,
+          5,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "42"
+      },
+      "93819": {
+        "id": "93819",
+        "city": "INDIANAPOLIS",
+        "state": "IN",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          4,
+          7,
+          5,
+          2,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "19"
+      },
+      "93820": {
+        "id": "93820",
+        "city": "LEXINGTON",
+        "state": "KY",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          5,
+          8,
+          7,
+          3,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "24"
+      },
+      "93821": {
+        "id": "93821",
+        "city": "LOUISVILLE",
+        "state": "KY",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          8,
+          13,
+          11,
+          4,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "38"
+      },
+      "93822": {
+        "id": "93822",
+        "city": "SPRINGFIELD",
+        "state": "IL",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          7,
+          12,
+          8,
+          4,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "33"
+      },
+      "93842": {
+        "id": "93842",
+        "city": "COLUMBUS",
+        "state": "GA",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          6,
+          17,
+          22,
+          21,
+          10,
+          1,
+          0,
+          0
+        ],
+        "annualValue": "78"
+      },
+      "93862": {
+        "id": "93862",
+        "city": "TUPELO",
+        "state": "MS",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          3,
+          15,
+          22,
+          20,
+          9,
+          1,
+          0,
+          0
+        ],
+        "annualValue": "70"
+      },
+      "94008": {
+        "id": "94008",
+        "city": "GLASGOW",
+        "state": "MT",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          3,
+          10,
+          10,
+          2,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "25"
+      },
+      "94012": {
+        "id": "94012",
+        "city": "HAVRE",
+        "state": "MT",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          11,
+          10,
+          2,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "27"
+      },
+      "94014": {
+        "id": "94014",
+        "city": "WILLISTON",
+        "state": "ND",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          2,
+          8,
+          7,
+          2,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "20"
+      },
+      "94185": {
+        "id": "94185",
+        "city": "BURNS",
+        "state": "OR",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          13,
+          10,
+          2,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "27"
+      },
+      "94224": {
+        "id": "94224",
+        "city": "ASTORIA",
+        "state": "OR",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "0"
+      },
+      "94240": {
+        "id": "94240",
+        "city": "QUILLAYUTE",
+        "state": "WA",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "1"
+      },
+      "94702": {
+        "id": "94702",
+        "city": "BRIDGEPORT",
+        "state": "CT",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          4,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "7"
+      },
+      "94728": {
+        "id": "94728",
+        "city": "NEW YORK Central Park",
+        "state": "NY",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          3,
+          6,
+          4,
+          1,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "15"
+      },
+      "94746": {
+        "id": "94746",
+        "city": "WORCESTER",
+        "state": "MA",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "3"
+      },
+      "94789": {
+        "id": "94789",
+        "city": "NEW YORK JFK AP",
+        "state": "NY",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          4,
+          3,
+          1,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "11"
+      },
+      "94814": {
+        "id": "94814",
+        "city": "HOUGHTON LAKE",
+        "state": "MI",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          2,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "4"
+      },
+      "94822": {
+        "id": "94822",
+        "city": "ROCKFORD",
+        "state": "IL",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          4,
+          6,
+          4,
+          2,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "15"
+      },
+      "94823": {
+        "id": "94823",
+        "city": "PITTSBURGH",
+        "state": "PA",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          4,
+          2,
+          1,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "9"
+      },
+      "94830": {
+        "id": "94830",
+        "city": "TOLEDO",
+        "state": "OH",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          4,
+          6,
+          4,
+          1,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "16"
+      },
+      "94846": {
+        "id": "94846",
+        "city": "CHICAGO",
+        "state": "IL",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          4,
+          6,
+          4,
+          2,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "17"
+      },
+      "94847": {
+        "id": "94847",
+        "city": "DETROIT",
+        "state": "MI",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          3,
+          5,
+          3,
+          1,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "12"
+      },
+      "94849": {
+        "id": "94849",
+        "city": "ALPENA",
+        "state": "MI",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          3,
+          2,
+          1,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "8"
+      },
+      "94860": {
+        "id": "94860",
+        "city": "GRAND RAPIDS",
+        "state": "MI",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          5,
+          2,
+          1,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "10"
+      },
+      "94908": {
+        "id": "94908",
+        "city": "DUBUQUE",
+        "state": "IA",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          3,
+          2,
+          1,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "8"
+      },
+      "94910": {
+        "id": "94910",
+        "city": "WATERLOO",
+        "state": "IA",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          4,
+          6,
+          4,
+          2,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "16"
+      },
+      "03856": {
+        "id": "03856",
+        "city": "HUNTSVILLE",
+        "state": "AL",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          3,
+          12,
+          17,
+          16,
+          7,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "55"
+      },
+      "03103": {
+        "id": "03103",
+        "city": "FLAGSTAFF",
+        "state": "AZ",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          2,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "3"
+      },
+      "03820": {
+        "id": "03820",
+        "city": "AUGUSTA",
+        "state": "GA",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          1,
+          7,
+          17,
+          23,
+          20,
+          10,
+          1,
+          0,
+          0
+        ],
+        "annualValue": "79"
+      },
+      "03813": {
+        "id": "03813",
+        "city": "MACON",
+        "state": "GA",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          1,
+          8,
+          18,
+          23,
+          22,
+          11,
+          1,
+          0,
+          0
+        ],
+        "annualValue": "85"
+      },
+      "03822": {
+        "id": "03822",
+        "city": "SAVANNAH",
+        "state": "GA",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          1,
+          6,
+          15,
+          22,
+          19,
+          8,
+          1,
+          0,
+          0
+        ],
+        "annualValue": "72"
+      },
+      "03928": {
+        "id": "03928",
+        "city": "WICHITA",
+        "state": "KS",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          13,
+          21,
+          19,
+          8,
+          1,
+          0,
+          0
+        ],
+        "annualValue": "64"
+      },
+      "03889": {
+        "id": "03889",
+        "city": "JACKSON",
+        "state": "KY",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          5,
+          5,
+          2,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "14"
+      },
+      "03816": {
+        "id": "03816",
+        "city": "PADUCAH",
+        "state": "KY",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          10,
+          16,
+          13,
+          5,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "46"
+      },
+      "03937": {
+        "id": "03937",
+        "city": "LAKE CHARLES",
+        "state": "LA",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          3,
+          16,
+          23,
+          23,
+          13,
+          2,
+          0,
+          0
+        ],
+        "annualValue": "80"
+      },
+      "03940": {
+        "id": "03940",
+        "city": "JACKSON",
+        "state": "MS",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          5,
+          18,
+          24,
+          23,
+          12,
+          1,
+          0,
+          0
+        ],
+        "annualValue": "84"
+      },
+      "03945": {
+        "id": "03945",
+        "city": "COLUMBIA",
+        "state": "MO",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          6,
+          14,
+          12,
+          4,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "36"
+      },
+      "03947": {
+        "id": "03947",
+        "city": "KANSAS CITY",
+        "state": "MO",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          7,
+          14,
+          12,
+          4,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "37"
+      },
+      "04725": {
+        "id": "04725",
+        "city": "BINGHAMTON",
+        "state": "NY",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          0,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "2"
+      },
+      "04781": {
+        "id": "04781",
+        "city": "ISLIP",
+        "state": "NY",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          3,
+          2,
+          0,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "7"
+      },
+      "03812": {
+        "id": "03812",
+        "city": "ASHEVILLE",
+        "state": "NC",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          2,
+          5,
+          3,
+          0,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "10"
+      },
+      "03870": {
+        "id": "03870",
+        "city": "GREENVILLE-SPARTANBURG",
+        "state": "SC",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          2,
+          9,
+          15,
+          11,
+          3,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "41"
+      },
+      "03841": {
+        "id": "03841",
+        "city": "OAK RIDGE",
+        "state": "TN",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          7,
+          12,
+          11,
+          4,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "35"
+      },
+      "03872": {
+        "id": "03872",
+        "city": "BECKLEY",
+        "state": "WV",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "1"
+      },
+      "03860": {
+        "id": "03860",
+        "city": "HUNTINGTON",
+        "state": "WV",
+        "valueByMonth": [
+          0,
+          0,
+          0,
+          0,
+          1,
+          4,
+          8,
+          7,
+          2,
+          0,
+          0,
+          0
+        ],
+        "annualValue": "22"
+      }
+    }
+  },
+  {
     "name": "Cloudiness - Mean Number of Days (Clear)",
     "dataByCityID": {
       "11641": {

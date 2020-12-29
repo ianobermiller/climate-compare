@@ -32,7 +32,7 @@ function relativeHumdity({title, fileName}) {
     const eat = chomper(line);
     const id = eat(5);
     const [city, state] = eat(32).split(',');
-    const [fromDate, toDate] = eat(13).split('-');
+    eat(13).split('-'); // fromDate-toDate
     const common = {
       id,
       city,
@@ -63,6 +63,44 @@ function relativeHumdity({title, fileName}) {
   }
 
   return [dataSetMorning, dataSetAfternoon];
+}
+
+function standard({title, fileName}) {
+  const contents = fs.readFileSync(fileName, 'utf8');
+  const lines = contents.split('\n');
+  const dataSet = {
+    name: title,
+    dataByCityID: {},
+  };
+
+  // Skip the first two header lines
+  for (const line of lines.slice(2)) {
+    if (!line.trim().length) {
+      continue;
+    }
+
+    const eat = chomper(line);
+    const id = eat(5);
+    const [city, state] = eat(32).split(',');
+
+    eat(13).split('-'); // fromDate-toDate
+
+    dataSet.dataByCityID[id] = {
+      id,
+      city,
+      state: state.trim(),
+      valueByMonth: [],
+    };
+    for (let i = 0; i < 12; i++) {
+      const stringValue = eat(6).trim();
+      const value = stringValue === '*' ? 0 : Number(stringValue);
+      dataSet.dataByCityID[id].valueByMonth.push(value);
+    }
+
+    dataSet.dataByCityID[id].annualValue = eat(6).trim();
+  }
+
+  return dataSet;
 }
 
 function cloudiness({title, fileName}) {
@@ -171,11 +209,10 @@ function normals({title, fileName, hasCommas}) {
 }
 
 const files = [
-  {title: 'Temperature - Highest of Record, °F', fileName: 'hghtmp18.dat'},
-  {title: 'Temperature - Lowest of Record, °F', fileName: 'lowtmp18.dat'},
   {
     title: 'Mean Number of Days Maximum Temperature 90°F or Higher',
     fileName: 'mxge9018.dat',
+    parser: standard,
   },
   {
     title: 'Mean Number of Days Minimum Temperature 32°F or Less',
