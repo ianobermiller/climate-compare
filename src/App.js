@@ -194,7 +194,8 @@ export default function App() {
         <a href="https://favicon.io/emoji-favicons/sun-behind-small-cloud/">
           Favicon.io
         </a>
-        .
+        . Source on{' '}
+        <a href="https://github.com/ianobermiller/climate-compare">GitHub</a>.
       </Segment>
     </Container>
   );
