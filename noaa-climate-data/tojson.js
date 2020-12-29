@@ -73,6 +73,44 @@ function standard({title, fileName}) {
     dataByCityID: {},
   };
 
+  // Skip the header line
+  for (const line of lines.slice(1)) {
+    if (!line.trim().length) {
+      continue;
+    }
+
+    const eat = chomper(line);
+    const id = eat(5);
+    const [city, state] = eat(32).split(',');
+
+    eat(13).split('-'); // fromDate-toDate
+
+    dataSet.dataByCityID[id] = {
+      id,
+      city,
+      state: state.trim(),
+      valueByMonth: [],
+    };
+    for (let i = 0; i < 12; i++) {
+      const stringValue = eat(6).trim();
+      const value = stringValue === '*' ? 0 : Number(stringValue);
+      dataSet.dataByCityID[id].valueByMonth.push(value);
+    }
+
+    dataSet.dataByCityID[id].annualValue = eat(6).trim();
+  }
+
+  return dataSet;
+}
+
+function maxWind({title, fileName}) {
+  const contents = fs.readFileSync(fileName, 'utf8');
+  const lines = contents.split('\n');
+  const dataSet = {
+    name: title,
+    dataByCityID: {},
+  };
+
   // Skip the first two header lines
   for (const line of lines.slice(2)) {
     if (!line.trim().length) {
@@ -92,7 +130,8 @@ function standard({title, fileName}) {
       valueByMonth: [],
     };
     for (let i = 0; i < 12; i++) {
-      const stringValue = eat(6).trim();
+      eat(4); // direciton
+      const stringValue = eat(4).trim();
       const value = stringValue === '*' ? 0 : Number(stringValue);
       dataSet.dataByCityID[id].valueByMonth.push(value);
     }
@@ -217,23 +256,33 @@ const files = [
   {
     title: 'Mean Number of Days Minimum Temperature 32°F or Less',
     fileName: 'mnls3218.dat',
+    parser: standard,
   },
   {
     title: 'Mean Number of Days with Precipitation 0.01 Inch or More',
     fileName: 'prge0118.dat',
+    parser: standard,
   },
   {
     title:
       'Snowfall (Including Ice Pellets and Sleet) - Average Total in Inches',
     fileName: 'avgsnf18.dat',
+    parser: standard,
   },
-  {title: 'Wind - Average Speed (MPH)', fileName: 'wndspd18.dat'},
-  {title: 'Wind - Maximum Speed (MPH)', fileName: 'maxwnd18.dat'},
-  {title: 'Sunshine - Average Percent of Possible', fileName: 'pctpos18.dat'},
   {
-    title:
-      'Sunshine - Average Percent of Possible (Cities Listed by Ranking Most to Least)',
-    fileName: 'pctposrank.txt',
+    title: 'Wind - Average Speed (MPH)',
+    fileName: 'wndspd18.dat',
+    parser: standard,
+  },
+  {
+    title: 'Wind - Maximum Speed (MPH)',
+    fileName: 'maxwnd18.dat',
+    parser: maxWind,
+  },
+  {
+    title: 'Sunshine - Average Percent of Possible',
+    fileName: 'pctpos18.dat',
+    parser: standard,
   },
   {
     title: 'Cloudiness - Mean Number of Days (Clear, Partly Cloudy, Cloudy)',
