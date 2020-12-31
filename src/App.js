@@ -1,32 +1,25 @@
 import {ResponsiveLine} from '@nivo/line';
-import 'semantic-ui-css/semantic.min.css';
-import {
-  Checkbox,
-  Container,
-  Dropdown,
-  Form,
-  Header,
-  List,
-  Segment,
-} from 'semantic-ui-react';
+import {Checkbox, Form, Select, Space, Typography} from 'antd';
+import 'antd/dist/antd.css';
+import './App.css';
 import DataSets from './data.json';
 import useLocalStorage from './useLocalStorage';
+
+const {Title} = Typography;
 
 const cities = Object.values(DataSets[0].dataByCityID).sort((a, b) =>
   a.city.localeCompare(b.city),
 );
 
-const cityOptions = cities.map(loc => ({
-  key: loc.id,
-  text: loc.city + ', ' + loc.state,
-  value: loc.id,
-}));
+const cityOptions = cities.map(loc => (
+  <Select.Option key={loc.id} value={loc.id}>
+    {loc.city}, {loc.state}
+  </Select.Option>
+));
 
-const dataSetOptions = DataSets.map(ds => ({
-  key: ds.name,
-  text: ds.name,
-  value: ds.name,
-}));
+const dataSetOptions = DataSets.map(ds => (
+  <Select.Option key={ds.name}>{ds.name}</Select.Option>
+));
 
 const monthNames = [
   'Jan',
@@ -51,7 +44,7 @@ export default function App() {
   ]);
   const [dataSetNames, setDataSetNames] = useLocalStorage(
     'dataSetNames',
-    dataSetOptions.map(o => o.value),
+    DataSets.map(ds => ds.name).filter(n => n.includes('Daily')),
   );
   const [shouldStartAtZero, setShouldStartAtZero] = useLocalStorage(
     'shouldStartAtZero',
@@ -79,57 +72,54 @@ export default function App() {
   }));
 
   return (
-    <Container text>
-      <Segment basic>
-        <Header as="h1">Compare Climates of U.S. Cities 🌤</Header>
-        <Form>
-          <Form.Field>
-            <label>Cities</label>
-            <Dropdown
-              fluid
-              multiple
-              onChange={(e, {value}) => setCityIDs(value)}
-              options={cityOptions}
+    <div className="App">
+      <header>
+        <Title>Compare Climates of U.S. Cities 🌤</Title>
+      </header>
+      <main>
+        <Form layout="vertical">
+          <Form.Item label="Cities">
+            <Select
+              allowClear
+              mode="multiple"
+              optionFilterProp="children"
+              onChange={setCityIDs}
               placeholder="Select Locations"
-              search
-              selection
-              value={cityIDs}
-            />
-          </Form.Field>
-          <Form.Field>
-            <label>Data</label>
-            <Dropdown
-              fluid
-              multiple
-              onChange={(e, {value}) => setDataSetNames(value)}
-              options={dataSetOptions}
+              style={{width: '100%'}}
+              value={cityIDs}>
+              {cityOptions}
+            </Select>
+          </Form.Item>
+          <Form.Item label="Data Sets">
+            <Select
+              allowClear
+              mode="multiple"
+              optionFilterProp="children"
+              onChange={setDataSetNames}
               placeholder="Select Data Sets"
-              search
-              selection
-              value={dataSetNames}
-            />
-          </Form.Field>
-          <Form.Field>
-            <List horizontal>
-              <List.Item>
-                <Checkbox
-                  checked={shouldStartAtZero}
-                  label="Start at zero"
-                  onChange={(e, {checked}) => setShouldStartAtZero(checked)}
-                />
-              </List.Item>
-              <List.Item>
-                <Checkbox
-                  checked={hasPointLabels}
-                  label="Point labels"
-                  onChange={(e, {checked}) => setHasPointLabels(checked)}
-                />
-              </List.Item>
-            </List>
-          </Form.Field>
+              style={{width: '100%'}}
+              value={dataSetNames}>
+              {dataSetOptions}
+            </Select>
+          </Form.Item>
+          <Form.Item label="Settings">
+            <Space>
+              <Checkbox
+                onChange={e => setShouldStartAtZero(e.target.checked)}
+                checked={shouldStartAtZero}>
+                Start at zero
+              </Checkbox>
+              <Checkbox
+                onChange={e => setHasPointLabels(e.target.checked)}
+                checked={hasPointLabels}>
+                Point labels
+              </Checkbox>
+            </Space>
+          </Form.Item>
           {charts.map(chart => (
-            <Form.Field key={chart.name + shouldStartAtZero + hasPointLabels}>
-              <label>{chart.name}</label>
+            <Form.Item
+              key={chart.name + shouldStartAtZero + hasPointLabels}
+              label={chart.name}>
               <div style={{height: 300}}>
                 <ResponsiveLine
                   data={chart.data}
@@ -178,11 +168,11 @@ export default function App() {
                   ]}
                 />
               </div>
-            </Form.Field>
+            </Form.Item>
           ))}
         </Form>
-      </Segment>
-      <Segment basic>
+      </main>
+      <footer>
         Made with 🚀 by <a href="https://ianobermiller.com">Ian Obermiller</a>.
         Data from the{' '}
         <a href="https://www.ncdc.noaa.gov/ghcn/comparative-climatic-data">
@@ -196,7 +186,7 @@ export default function App() {
         </a>
         . Source on{' '}
         <a href="https://github.com/ianobermiller/climate-compare">GitHub</a>.
-      </Segment>
-    </Container>
+      </footer>
+    </div>
   );
 }
