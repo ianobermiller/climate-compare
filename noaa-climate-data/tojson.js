@@ -11,6 +11,14 @@ function chomper(line) {
   };
 }
 
+function titleCase(text) {
+  return text.replace(/((^\w)|( \w))/g, s => s.toUpperCase());
+}
+
+function cleanCity(city) {
+  return titleCase(city.trim().toLowerCase());
+}
+
 function relativeHumdity({title, fileName}) {
   const contents = fs.readFileSync(fileName, 'utf8');
   const lines = contents.split('\n');
@@ -35,7 +43,7 @@ function relativeHumdity({title, fileName}) {
     eat(13).split('-'); // fromDate-toDate
     const common = {
       id,
-      city,
+      city: cleanCity(city),
       state: state.trim(),
     };
     dataSetMorning.dataByCityID[id] = {
@@ -87,7 +95,7 @@ function standard({title, fileName}) {
 
     dataSet.dataByCityID[id] = {
       id,
-      city,
+      city: cleanCity(city),
       state: state.trim(),
       valueByMonth: [],
     };
@@ -125,7 +133,7 @@ function maxWind({title, fileName}) {
 
     dataSet.dataByCityID[id] = {
       id,
-      city,
+      city: cleanCity(city),
       state: state.trim(),
       valueByMonth: [],
     };
@@ -221,7 +229,7 @@ function normals({title, fileName, hasCommas}) {
     }
     dataSet.dataByCityID[id] = {
       id,
-      city,
+      city: cleanCity(city),
       state: state.trim(),
       valueByMonth: [],
     };
