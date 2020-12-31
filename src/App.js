@@ -179,8 +179,7 @@ export default function App() {
           NOAA
         </a>
         . Charts by <a href="https://nivo.rocks/">Nivo</a>. UI by{' '}
-        <a href="https://react.semantic-ui.com/">React Semantic UI</a>. Favicon
-        by{' '}
+        <a href="https://ant.design/">Ant Design</a>. Favicon by{' '}
         <a href="https://favicon.io/emoji-favicons/sun-behind-small-cloud/">
           Favicon.io
         </a>
