@@ -38,14 +38,10 @@ function relativeHumdity({title, fileName}) {
     }
 
     const eat = chomper(line);
-    const id = eat(5);
-    const [city, state] = eat(32).split(',');
+    const {id, city, state} = parseIDAndName(eat);
+
     eat(13).split('-'); // fromDate-toDate
-    const common = {
-      id,
-      city: cleanCity(city),
-      state: state.trim(),
-    };
+    const common = {id, city, state};
     dataSetMorning.dataByCityID[id] = {
       ...common,
       valueByMonth: [],
@@ -88,17 +84,11 @@ function standard({title, fileName}) {
     }
 
     const eat = chomper(line);
-    const id = eat(5);
-    const [city, state] = eat(32).split(',');
+    const {id, city, state} = parseIDAndName(eat);
 
     eat(13).split('-'); // fromDate-toDate
 
-    dataSet.dataByCityID[id] = {
-      id,
-      city: cleanCity(city),
-      state: state.trim(),
-      valueByMonth: [],
-    };
+    dataSet.dataByCityID[id] = {id, city, state, valueByMonth: []};
     for (let i = 0; i < 12; i++) {
       const stringValue = eat(6).trim();
       const value = stringValue === '*' ? 0 : Number(stringValue);
@@ -126,17 +116,12 @@ function maxWind({title, fileName}) {
     }
 
     const eat = chomper(line);
-    const id = eat(5);
-    const [city, state] = eat(32).split(',');
+    const {id, city, state} = parseIDAndName(eat);
 
     eat(13).split('-'); // fromDate-toDate
 
-    dataSet.dataByCityID[id] = {
-      id,
-      city: cleanCity(city),
-      state: state.trim(),
-      valueByMonth: [],
-    };
+    dataSet.dataByCityID[id] = {id, city, state, valueByMonth: []};
+
     for (let i = 0; i < 12; i++) {
       eat(4); // direciton
       const stringValue = eat(4).trim();
@@ -175,15 +160,10 @@ function cloudiness({title, fileName}) {
     }
 
     const eat = chomper(line);
-    const id = eat(5);
-    const [city, state] = eat(32).split(',');
+    const {id, city, state} = parseIDAndName(eat);
+
     dataSets.forEach(ds => {
-      ds.dataByCityID[id] = {
-        id,
-        city: cleanCity(city),
-        state: state.trim(),
-        valueByMonth: [],
-      };
+      ds.dataByCityID[id] = {id, city, state, valueByMonth: []};
     });
 
     eat(3); // Years
@@ -217,22 +197,9 @@ function normals({title, fileName, hasCommas}) {
     }
 
     const eat = chomper(line);
-    const id = eat(5);
-    hasCommas && eat(1); // Comma
-    const name = eat(32).trim();
-    let city, state;
-    if (name.includes(',')) {
-      [city, state] = name.split(',');
-    } else {
-      city = name.slice(0, -2);
-      state = name.slice(-2);
-    }
-    dataSet.dataByCityID[id] = {
-      id,
-      city: cleanCity(city),
-      state: state.trim(),
-      valueByMonth: [],
-    };
+    const {id, city, state} = parseIDAndName(eat, hasCommas);
+
+    dataSet.dataByCityID[id] = {id, city, state, valueByMonth: []};
 
     eat(4); // Years
 
@@ -253,6 +220,40 @@ function normals({title, fileName, hasCommas}) {
   }
 
   return dataSet;
+}
+
+// Some datasets have different IDs for the same name. If we find an existing ID
+// for the name, use that ID instead.
+const idByName = {};
+function getID(id, city, state) {
+  const name = city + state;
+  if (idByName[name]) {
+    return idByName[name];
+  }
+  idByName[name] = id;
+  return id;
+}
+
+function parseIDAndName(eat, hasCommas) {
+  const rawID = eat(5);
+
+  hasCommas && eat(1); // Comma
+
+  const name = eat(32).trim();
+  let city, state;
+  if (name.includes(',')) {
+    [city, state] = name.split(',');
+  } else {
+    city = name.slice(0, -2);
+    state = name.slice(-2);
+  }
+
+  city = cleanCity(city);
+  state = state.trim();
+
+  const id = getID(rawID, city, state);
+
+  return {id, city, state};
 }
 
 const files = [
