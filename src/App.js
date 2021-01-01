@@ -224,8 +224,6 @@ function Stats() {
       id: cities[0].id,
       names: Array.from(new Set(cities.map(c => c.city))).join('\n'),
     }));
-  console.table(multipleIDs);
-  console.table(multipleNames);
   return (
     <Row gutter={[16, 16]}>
       <Col span="8">
