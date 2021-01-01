@@ -1,5 +1,14 @@
 import {ResponsiveLine} from '@nivo/line';
-import {Checkbox, Form, Select, Space, Typography} from 'antd';
+import {
+  Checkbox,
+  Col,
+  Form,
+  Row,
+  Select,
+  Space,
+  Statistic,
+  Typography,
+} from 'antd';
 import 'antd/dist/antd.css';
 import './App.css';
 import DataSets from './data.json';
@@ -46,14 +55,9 @@ export default function App() {
     'dataSetNames',
     DataSets.map(ds => ds.name).filter(n => n.includes('Daily')),
   );
-  const [shouldStartAtZero, setShouldStartAtZero] = useLocalStorage(
-    'shouldStartAtZero',
-    false,
-  );
-  const [hasPointLabels, setHasPointLabels] = useLocalStorage(
-    'hasPointLabels',
-    false,
-  );
+  const [startAtZeroCheckbox, shouldStartAtZero] = useCheckbox('Start at zero');
+  const [hasPointLabelsCheckbox, hasPointLabels] = useCheckbox('Point labels');
+  const [showStatsCheckbox, shouldShowStats] = useCheckbox('Show stats');
 
   const selectedDataSets = DataSets.filter(ds =>
     dataSetNames.includes(ds.name),
@@ -104,18 +108,18 @@ export default function App() {
           </Form.Item>
           <Form.Item label="Settings">
             <Space>
-              <Checkbox
-                onChange={e => setShouldStartAtZero(e.target.checked)}
-                checked={shouldStartAtZero}>
-                Start at zero
-              </Checkbox>
-              <Checkbox
-                onChange={e => setHasPointLabels(e.target.checked)}
-                checked={hasPointLabels}>
-                Point labels
-              </Checkbox>
+              {startAtZeroCheckbox}
+              {hasPointLabelsCheckbox}
+              {showStatsCheckbox}
             </Space>
           </Form.Item>
+
+          {shouldShowStats && (
+            <Form.Item label="Statistics">
+              <Stats />
+            </Form.Item>
+          )}
+
           {charts.map(chart => (
             <Form.Item
               key={
@@ -190,4 +194,66 @@ export default function App() {
       </footer>
     </div>
   );
+}
+
+function useCheckbox(label) {
+  const [isChecked, setIsChecked] = useLocalStorage(label, false);
+  const element = (
+    <Checkbox
+      onChange={e => setIsChecked(e.target.checked)}
+      checked={isChecked}>
+      {label}
+    </Checkbox>
+  );
+  return [element, isChecked];
+}
+
+function Stats() {
+  const allDataPoints = DataSets.flatMap(ds => Object.values(ds.dataByCityID));
+  const dedupeID = group(allDataPoints, c => c.id);
+  const dedupeName = group(allDataPoints, c => c.city + ', ' + c.state);
+  const multipleIDs = Array.from(dedupeName.values())
+    .filter(cities => cities.some(c => c.id !== cities[0].id))
+    .map(cities => ({
+      name: cities[0].city + ', ' + cities[0].state,
+      ids: Array.from(new Set(cities.map(c => c.id))).join('\n'),
+    }));
+  const multipleNames = Array.from(dedupeID.values())
+    .filter(cities => cities.some(c => c.city !== cities[0].city))
+    .map(cities => ({
+      id: cities[0].id,
+      names: Array.from(new Set(cities.map(c => c.city))).join('\n'),
+    }));
+  console.table(multipleIDs);
+  console.table(multipleNames);
+  return (
+    <Row gutter={[16, 16]}>
+      <Col span="8">
+        <Statistic title="Data Points" value={allDataPoints.length} />
+      </Col>
+      <Col span="8">
+        <Statistic title="Unique City IDs" value={dedupeID.size} />
+      </Col>
+      <Col span="8">
+        <Statistic title="Unique Names" value={dedupeName.size} />
+      </Col>
+      <Col span="8">
+        <Statistic title="Multiple IDs" value={multipleIDs.length} />
+      </Col>
+      <Col span="8">
+        <Statistic title="Multiple Names" value={multipleNames.length} />
+      </Col>
+    </Row>
+  );
+}
+
+function group(items, getKey) {
+  const result = new Map();
+  for (const item of items) {
+    const key = getKey(item);
+    const list = result.get(key) ?? [];
+    list.push(item);
+    result.set(key, list);
+  }
+  return result;
 }
