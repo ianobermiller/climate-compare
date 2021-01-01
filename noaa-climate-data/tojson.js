@@ -180,7 +180,7 @@ function cloudiness({title, fileName}) {
     dataSets.forEach(ds => {
       ds.dataByCityID[id] = {
         id,
-        city,
+        city: cleanCity(city),
         state: state.trim(),
         valueByMonth: [],
       };
