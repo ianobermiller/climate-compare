@@ -11,14 +11,34 @@ import {
 } from 'antd';
 import 'antd/dist/antd.css';
 import './App.css';
-import DataSets from './data.json';
+import DataSetsRaw from './data.json';
 import useLocalStorage from './useLocalStorage';
 
 const {Title} = Typography;
 
-const cities = Object.values(DataSets[0].dataByCityID).sort((a, b) =>
+const cities = Object.values(DataSetsRaw[0].dataByCityID).sort((a, b) =>
   a.city.localeCompare(b.city),
 );
+
+const Humidity = DataSetsRaw.find(
+  ds => ds.name === 'Average Relative Humidity (Afternoon)',
+);
+const Temp = DataSetsRaw.find(
+  ds => ds.name === 'Normal Daily Maximum Temperature, °F',
+);
+const DataSets = DataSetsRaw.concat({
+  name: 'Dew Point, °F',
+  dataByCityID: cities.reduce((acc, {id, city, state}) => {
+    const hum = Humidity.dataByCityID[id]?.valueByMonth;
+    const temp = Temp.dataByCityID[id]?.valueByMonth;
+    if (!hum || !temp) {
+      return acc;
+    }
+    const valueByMonth = hum.map((h, i) => dewPoint(h, temp[i]));
+    acc[id] = {id, city, state, valueByMonth};
+    return acc;
+  }, {}),
+});
 
 const cityOptions = cities.map(loc => (
   <Select.Option key={loc.id} value={loc.id}>
@@ -51,10 +71,10 @@ export default function App() {
     '13891',
     '14839',
   ]);
-  const [dataSetNames, setDataSetNames] = useLocalStorage(
-    'dataSetNames',
-    DataSets.map(ds => ds.name).filter(n => n.includes('Daily')),
-  );
+  const [dataSetNames, setDataSetNames] = useLocalStorage('dataSetNames', [
+    'Normal Daily Maximum Temperature, °F',
+    'Dew Point, °F',
+  ]);
   const [startAtZeroCheckbox, shouldStartAtZero] = useCheckbox('Start at zero');
   const [hasPointLabelsCheckbox, hasPointLabels] = useCheckbox('Point labels');
   const [showStatsCheckbox, shouldShowStats] = useCheckbox('Show stats');
@@ -254,4 +274,16 @@ function group(items, getKey) {
     result.set(key, list);
   }
   return result;
+}
+
+// https://bmcnoldy.rsmas.miami.edu/Humidity.html
+function dewPoint(relativeHumidity, tempInF) {
+  return Math.round(
+    (243.04 *
+      (Math.log(relativeHumidity / 100) +
+        (17.625 * tempInF) / (243.04 + tempInF))) /
+      (17.625 -
+        Math.log(relativeHumidity / 100) -
+        (17.625 * tempInF) / (243.04 + tempInF)),
+  );
 }
